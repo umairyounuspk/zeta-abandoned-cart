@@ -1,0 +1,14 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ #zac-user-consent{
+    vertical-align: middle;
+    width: 9px;
+    height: 9px;
+}
+
+#zac-user-consent:focus{
+    outline-color: transparent;
+}

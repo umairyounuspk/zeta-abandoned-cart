@@ -1,0 +1,145 @@
+/**
+* All of the CSS for your admin-specific functionality should be
+* included in this file.
+*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.zac-stat-cards{
+   display: grid;
+   grid-template-columns: 12% 12% auto;
+   column-gap: 10px;
+   row-gap: 10px;
+}
+.zac-stat-card{
+   padding: 0px 10px;
+   background-color: white;
+}
+.zac-stat-card p.title, .cart-details-container p.title{
+   letter-spacing: 1px;
+   font-weight: bold;
+   font-size: large;
+   border-bottom: 1px solid #dcdcde;
+}
+.zac-stat-card p.body{
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+.zac-stat-card p.details{
+    text-align: center;
+}
+.zac-stat-card.graph-container{
+    grid-row: span 2;
+}
+/* view cart page */
+.cart-data-container{
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: auto auto;
+}
+.cart-data{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: white;
+    padding: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+.cart-data.spanned{
+    grid-column: 1/span 2;
+}
+.cart-info > p{
+    display: inline-block;
+    margin: 5px 0;
+}
+.cart-info > label{
+    font-weight: bold;
+    vertical-align: unset;
+}
+.cart-info.same-shipping{
+    grid-column: 1 / span 3;
+    text-align: center;
+    align-self: center;
+}
+.cart-data p.legend{
+    position: absolute;
+    top: -30px;
+    font-size: 18px;
+    text-decoration: underline;
+    background-color: white;
+    padding: 10px 25px 6px 20px;
+    font-weight: 600;
+    margin: 0;
+}
+.wrap.zac-settings .form-table th{
+  width: 275px;
+}
+.wrap.zac-settings .form-table input[type="text"],
+.wrap.zac-settings .form-table input[type="email"],
+.wrap.zac-settings .form-table textarea{
+  min-width: 33%;
+}
+.wrap.zac-settings .form-table td input[type="number"]{
+    max-width: 100px;
+    min-width: 100px;
+}
+.discount_type_wrapper{
+  display: inline;
+}
+.discount_type_wrapper > input{
+  margin-left: 10px;
+}
+#test_email_status{
+  padding-left: 25px;
+}
